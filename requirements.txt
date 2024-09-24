@@ -1,0 +1,1 @@
+codetypo[toml] @ git+https://github.com/khulnasoft/codetypo.git

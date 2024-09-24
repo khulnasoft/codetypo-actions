@@ -19,3 +19,24 @@ services:
     volumes:
       - ./:/data
     command: --defaults=.pandoc.yml
+
+  # ---- action container ---- #
+  action:
+    profiles: ["action"]
+    build: .
+
+  # ---- main container ---- #
+  code:
+    profiles: ["code"]
+    image: python:3.8-alpine
+    working_dir: /code
+    entrypoint: ./entrypoint.sh || echo $?
+    command: [start]
+    tty: true
+    volumes:
+      - ./:/code
+
+  app-test:
+    extends: code
+    profiles: ["test"]
+    command: run test:ci -- --reporter=classic

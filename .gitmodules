@@ -1,0 +1,3 @@
+[submodule "codetypo-validator"]
+	path = codetypo-validator
+	url = https://github.com/khulnasoft/codetypo-validator

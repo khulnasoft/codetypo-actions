@@ -1,0 +1,8 @@
+repos:
+  - repo: https://github.com/khulnasoft/codetypo
+    rev: v2.3.0
+    hooks:
+      - id: codetypo
+        args: [--ignore-words-list, "abandonned,ackward,bu"]
+        additional_dependencies:
+          - tomli
