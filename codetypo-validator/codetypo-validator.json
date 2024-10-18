@@ -1,0 +1,26 @@
+{
+	"problemMatcher": [
+		{
+			"owner": "codetypo-validator-default",
+			"pattern": [
+				{
+					"regexp": "^(.+):(\\d+):\\s+(.+)$",
+					"file": 1,
+					"line": 2,
+					"message": 3
+				}
+			]
+		},
+		{
+			"owner": "codetypo-validator-specified",
+			"pattern": [
+				{
+					"regexp": "^(ERROR|WARNING):\\s+(.+):\\s+(.+?)\\s*$",
+					"file": 3,
+					"severity": 1,
+					"message": 2
+				}
+			]
+		}
+	]
+}
