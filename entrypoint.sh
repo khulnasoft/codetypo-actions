@@ -48,9 +48,9 @@ echo "Resulting CLI options ${command_args}"
 exec 5>&1
 res=`{ { codetypo --count ${command_args} ${INPUT_PATH}; echo $? 1>&4; } 1>&5; } 4>&1`
 if [ "$res" = "0" ]; then
-    echo "Codespell found no problems"
+    echo "Codetypo found no problems"
 else
-    echo "Codespell found one or more problems"
+    echo "Codetypo found one or more problems"
 fi
 
 # Remove the matchers, so no other jobs hit them.

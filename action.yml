@@ -1,6 +1,6 @@
-name: 'Codespell with annotations'
+name: 'Codetypo with annotations'
 author: 'Peter Newman'
-description: 'Codespell with annotations for Pull Request'
+description: 'Codetypo with annotations for Pull Request'
 inputs:
   check_filenames:
     description: 'If set, check file names as well'

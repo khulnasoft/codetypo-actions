@@ -58,7 +58,7 @@ function setup() {
     outputRegex="^Running codetypo on '${INPUT_PATH}'"
     [[ "${lines[1]}" =~ $outputRegex ]]
     [ "${lines[-4 - $errorCount]}" == "$errorCount" ]
-    [ "${lines[-3]}" == "Codespell found one or more problems" ]
+    [ "${lines[-3]}" == "Codetypo found one or more problems" ]
     [ "${lines[-2]}" == "::remove-matcher owner=codetypo-validator-default::" ]
     [ "${lines[-1]}" == "::remove-matcher owner=codetypo-validator-specified::" ]
 }

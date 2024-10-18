@@ -1,4 +1,4 @@
-# Codespell with GitHub Actions -- including annotations for Pull Requests
+# Codetypo with GitHub Actions -- including annotations for Pull Requests
 
 This GitHub Actions runs codetypo over your code.
 Any warnings or errors will be annotated in the Pull Request.
